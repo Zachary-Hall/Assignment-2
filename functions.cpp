@@ -16,7 +16,17 @@ int wordlen;
 char *word = NULL;
 while(*str != '\0')
 {
-return 0;
+	if(*str == ' ') {
+        words++;
+        wordlen = str - word;
+        *str = '\0';
+        cout <<"The length of Parameter " << words-1 <<" is " << wordlen << " " << word<< endl;  
+        word = NULL;
+    }
+    else if (word == NULL) word = str;
+    str++;
 }
-return 0;
+wordlen = str - word;
+cout <<"The length of Parameter " << words <<" is " << wordlen << " " << word<< endl;  
+cout << "The number of command line parameters are: "; return words;
 }
