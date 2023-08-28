@@ -20,6 +20,6 @@ char word[size];
 cout << "Please enter some characters:";
 cin.getline(word, size); 
 
-cout <<string_length(word)<<.
+cout <<string_length(word)<<endl;
 }
 
